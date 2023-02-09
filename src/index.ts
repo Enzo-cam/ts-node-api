@@ -4,7 +4,7 @@ import diaryRoute from './routes/diaries'
 const app = express()
 app.use(express.json()) //Transform our req.body to JSON
 
-const PORT = 5000;
+const PORT = 5500;
 
 app.get('/ping', (_req, res) => {
     console.log('Someone tried to enter here.')
