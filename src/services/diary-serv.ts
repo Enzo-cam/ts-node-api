@@ -29,7 +29,6 @@ export const addDiary = (newDiaryEntry : newDiaryEntry) : DiaryEntry => {
         id: diaries.length + 1,
         ...newDiaryEntry
     }
-
     diaries.push(newDiary)
     return newDiary
 }

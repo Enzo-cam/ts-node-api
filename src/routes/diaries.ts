@@ -14,9 +14,7 @@ router.get('/:id', (_req, res) =>{
 
 router.post('/', (_req, res) =>{
     try {
-        
         const newDiary = toNewEntry(_req.body)
-        
         const addNewDiary = diaryServices.addDiary(newDiary)
         
         res.json(addNewDiary)
